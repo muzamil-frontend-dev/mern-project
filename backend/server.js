@@ -8,6 +8,7 @@ import orderRoutes from "./routes/orders.js";
 import adminRoutes from "./routes/admin.js";
 import errorHandler from "./middleware/errorHandler.js";
 import morgan from "morgan";
+import path from "path";
 
 dotenv.config();
 
