@@ -27,6 +27,8 @@ app.use("/api/admin", adminRoutes);
 
 const __dir = path.resolve();
 
+app.use("/uploads", express.static(path.join(__dir, "uploads")));
+
 if (process.env.NODE_MODE === "production") {
   app.use("/", express.static(path.join(__dir, "frontend", "build")));
 
