@@ -1,0 +1,65 @@
+.app-main {
+  min-height: calc(100vh - 141px);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.product-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.empty-layout {
+  color: #8c8c8c;
+  border: 1px solid #d9d9d9;
+  background-color: #fbfbfb;
+}
+
+div.form-control {
+  box-shadow: inset 0 -1px 0 #ddd;
+  transition: box-shadow .2s;
+}
+
+.side-nav {
+  width: 250px;
+  min-height: calc(100vh - 160px);
+}
+.side-nav .list-group-item {
+  padding-left: 60px;
+}
+.side-nav .list-group-item:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .side-nav {
+    width: 100%;
+    text-align: center;
+    min-height: auto;
+  }
+}
+
+.filter_btn {
+  width: 100%;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 5px 0;
+  box-shadow: none;
+}
+.filter_btn.active, .filter_btn:hover { text-decoration: underline; }
+
+.filter_color {
+  width: 25px;
+  height: 25px;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.filter_color:hover,
+.filter_color.active  {opacity: 1;}
